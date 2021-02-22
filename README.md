@@ -36,7 +36,10 @@ cp .env.example .env
 # modify the database configuration in .env file as you prefer
 
 # generate application key
-php artisan generate:key
+php artisan key:generate
+
+# create a symbolic link to storage directory
+php artisan storage:link
 
 # change the BROADCAST_DRIVER value in .env file from log to pusher
 BROADCAST_DRIVER=pusher
